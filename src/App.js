@@ -6,13 +6,23 @@ import Content from './Content';
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { expanded: false }
+    this.state = { expanded: true } // default small screen
   }
 
   toggleSidebar() {
-    this.setState({expanded: !this.state.expanded})
+    this.setState({ expanded: !this.state.expanded })
   }
 
+  toggleSidebarLock() {
+    this.setState({ expanded: true })
+  }
+
+    // test
+    // touchAnywhere = () => {
+    //   this.setState(() => ({ expanded: false}))
+    // }
+
+    
   render() {
     return (
       <main>
