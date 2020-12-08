@@ -13,9 +13,8 @@ class Sidebar extends React.Component {
 
         return (
             <div className={this.props.expanded ? "sidebar sidebar--expanded" : "sidebar"} onClick={this.props.toggleSidebar} >
-
-                {/* <button onClick={this.props.toggleSidebar}>Hide</button>
-                <button onClick={this.props.toggleSidebarLock}>Lock</button> */}
+            {/* <div className={this.props.expanded ? "sidebar sidebar--expanded" : "sidebar"}> */}
+                {/* <button onClick={this.props.toggleSidebar}>Hide</button> */}
 
                 {showFull &&
                     <div className="sidebar-full">
